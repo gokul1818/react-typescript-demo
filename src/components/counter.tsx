@@ -44,7 +44,7 @@ console.log(result)
 export const Counter = () => {
   const [currentNumber, setCurrentNumber] = useState<number | null>(0);
 
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [state, dissss] = useReducer(reducer, initialState);
   const handleIncrement = () => {
     if (currentNumber !== null) {
       setCurrentNumber(currentNumber + 1);
@@ -75,15 +75,15 @@ export const Counter = () => {
       <div style={{ display: "flex" }}>
         <p>COUNT: {state.count}</p>
         <Button
-          handleclick={() => dispatch({ type: "add", payload: 2 })}
+          handleclick={() => dissss({ type: "add", payload: 2 })}
           btnLabel="ADD"
         />
         <Button
-          handleclick={() => dispatch({ type: "minus", payload: 2 })}
+          handleclick={() => dissss({ type: "minus", payload: 2 })}
           btnLabel="MINUS"
         />
         <Button
-          handleclick={() => dispatch({ type: "reset" })}
+          handleclick={() => dissss({ type: "reset" })}
           btnLabel="RESET"
         />
       </div>
